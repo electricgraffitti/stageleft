@@ -1,0 +1,8 @@
+Main Background Color:			#816146
+
+Main Container Color:				##614f40
+
+Sidebar Color:							#543317
+
+Border Color:								#000000
+

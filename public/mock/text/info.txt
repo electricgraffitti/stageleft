@@ -1,0 +1,25 @@
+Stageleftredesign.com   
+
+Owner:  Christina LeBreton
+
+cristinalebreton@yahoo.com
+
+Hosted at Godaddy
+
+Godaddy login:
+Customer #: 22160254
+password:  roma45
+
+FTP:
+server:	208.109.181.57
+UN:			lebreton
+pw:			Roma45slr
+
+
+path: 
+/home/content/l/e/b/lebreton/html
+
+Staging url:  http://www.stage1.cinneman.com
+
+Site font logo:   Staccato 222 BT  (in the box)
+
