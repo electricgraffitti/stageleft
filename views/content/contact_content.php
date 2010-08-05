@@ -33,7 +33,7 @@ echo "";
 			<div class="error">
 				<!--ERRORMSG:tel-->
 			</div>
-			<div class="form_field">
+			<div class="form_field_select">
     <label>Select One:</label><br /> 
       	<select name="select">
         	<option>General</option>

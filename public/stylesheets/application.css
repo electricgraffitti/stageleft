@@ -279,6 +279,7 @@ h2.sidebar_header {
 	color:#CCCCCC;
 	float:left;
 	margin-left:35px;
+	margin-top:10px;
 	position:relative;
 	text-align:left;
 	width:100%;
@@ -307,16 +308,23 @@ h2.sidebar_header {
 	text-align:left;
 	width:100%;
 }
+#content div.form_field_select {
+	width: 100%;
+	height: 55px;
+	text-align: left;
+	position: relative;
+	float: left;
+}
 #content div.form_field_button {
 	height:80px;
 	width:100%;
 }
 #content div.error {
+	position: relative;
 	color:#FF0000;
 	float:left;
-	height:25px;
 	margin-left:32px;
-	margin-top:5px;
+	margin-top:-3px;
 	text-align:left;
 	width:440px;
 }
@@ -334,34 +342,29 @@ h2.sidebar_header {
 	margin-top:5px;
 }
 #content .btn {
-	background:url("../images/button.png") 0px 0px no-repeat;
-	border:medium none;
+	background:#fff;
+	border:1px solid #937D6A;
+	display:block;
 	float:left;
-	height:40px;
+	height:30px;
 	margin-left:30px;
 	margin-top:25px;
 	position:relative;
-	text-align:left;
-	width:89px;
-	font-size: 0px;
-	display:block;
-	line-height: 0px;
-	
+	text-align:center;
+	width:70px;
 }
 #content .btn:hover {
-	background:url("../images/button.png") -92px 0px no-repeat;
-	border:medium none;
+	background: #000;
+	border:1px solid #937D6A;
 	float:left;
-	height:40px;
+	height:30px;
 	margin-left:30px;
 	margin-top:25px;
 	position:relative;
-	text-align:left;
-	width:89px;
-	font-size: 0px;
+	text-align:center;
+	width:70px;
 	display:block;
-	line-height: 0px;
-
+	color: #fff;
 }
 #left {
 	position: relative;
@@ -371,7 +374,7 @@ h2.sidebar_header {
 }
 #content #left img {
 	margin-top: 20px;
-	border: 1px solid #000;
+	border:1px solid #937D6A;
 	padding: 1px;
 	background: #ccc;
 }
@@ -389,7 +392,7 @@ h2.sidebar_header {
 }
 #content #right img {
 	margin-top: 20px;
-	border: 1px solid #000;
+	border:1px solid #937D6A;
 	padding: 1px;
 	background: #ccc;
 }
