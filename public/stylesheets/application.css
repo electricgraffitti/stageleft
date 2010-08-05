@@ -1,5 +1,6 @@
-body {
-	background: #826146;
+html,body {
+	background: #2F261F;
+/*	background: #826146;*/
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   color: #333;
   font-size: 85%;
@@ -13,6 +14,12 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, img {
 	background:none repeat scroll 0 0 #614F40;
 	margin:0 auto;
 	width:940px;
+	border-left: 1px solid #40332a;
+	border-right: 1px solid #40332a;
+	border-bottom: 1px solid #614F40;
+	-moz-box-shadow: 0px 1px 2px #000;
+	-webkit-box-shadow: 0px 1px 2px #000;
+	box-shadow: 0px 1px 2px #000;
 }
 a {
 	color: #fff;
@@ -38,7 +45,7 @@ a:visited {
   position: relative;
 	width: 940px;
   height: 120px;
-	background: url("images/header3.png") no-repeat;
+	background: url("../images/header4.png") no-repeat;
 }
 #logo {
 	float:left;
@@ -56,22 +63,47 @@ a:visited {
 	text-indent:-9999em;
 	width:400px;
 }
-#banner img {
-	border:2px solid #000000;
-	float:left;
+#banner {
+	position: relative;
+	border: 1px solid #937d6a;
+	background: #937d6a;
 	margin-left:25px;
 	margin-top:35px;
 	padding:8px;
+	-moz-box-shadow: 0px 1px 2px #000;
+	-webkit-box-shadow: 0px 1px 2px #000;
+	box-shadow: 0px 1px 2px #000;
+	float: left;
+}
+#banner img {
+	border:1px solid #362c24;
 	position:relative;
 }
 #sidebar {
-	border:2px solid #000;
+	border: 1px solid #937d6a;
 	position: relative;
 	float:left;
-	height:645px;
+	min-height:645px;
 	margin:35px 0 20px 20px;
 	width:255px;
-	background:url("images/sidebar_bg.png") no-repeat scroll 0 0 transparent;
+	background: #6b4d34 url("../images/sidebar_bg2.png") no-repeat scroll 0 0;
+	-moz-box-shadow: 0px 1px 2px #000;
+	-webkit-box-shadow: 0px 1px 2px #000;
+	box-shadow: 0px 1px 2px #000;
+}
+#sidebar_inner {
+	position: relative;
+	float: left;
+	width:253px;
+	border: 1px solid #362c24;
+}
+h2.sidebar_header {
+	position: relative;
+	width: 207px;
+	height: 31px;
+	margin: 10px auto;
+	text-indent: -3000em;
+	background: url(../images/stage.png) 0px 0px no-repeat;
 }
 #sidebar img {
 	color:#CCCCCC;
@@ -127,36 +159,45 @@ a:visited {
 	height: 350px;
 }
 #red {
-	background:url("images/redmntn.png") no-repeat scroll 0 0 transparent;
+	background:url("../images/redmntn.png") no-repeat scroll 0 0 transparent;
 	height: 38px;
 }
 #red a {
 	height: 38px;
 }
 #reesa {
-	background:url("images/resa1.jpg") no-repeat scroll 0 0 transparent;
+	background:url("../images/resa1.jpg") no-repeat scroll 0 0 transparent;
 	height: 70px;
 }
 #reesa a {
 	height: 70px;
 }
 #iris {
-	background:url("images/iris1.gif") no-repeat scroll 0 0 transparent;
+	background:url("../images/iris1.gif") no-repeat scroll 0 0 transparent;
 	height: 65px;
 }
 #iris a {
 	height: 65px;
 }
 #ia {
-	background:url("images/ia3.jpg") no-repeat scroll 0 0 transparent;
+	background:url("../images/ia3.jpg") no-repeat scroll 0 0 transparent;
 	height: 75px;
 }
 #ia a {
 	height: 75px;
 }
-#main_content, #main_content_2 {
+#main_content {
 	position: relative;
 	float: left;
+	background: url(../images/content_bg.jpg) 0px 0px no-repeat;
+}
+#content_btm {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 940px;
+	height: 300px;
+	background: url(../images/content_bottom.jpg) 0px bottom no-repeat;
 }
 #content {
 	float:left;
@@ -166,19 +207,16 @@ a:visited {
 	height:100%;
 	padding-bottom: 20px;
 }
-#content h2 {
-	color:#CCCCCC;
+#content h2, #content h3 {
+	color:#fff;
+	text-shadow: 0px 1px 1px #000;
 	float:left;
-	font-size:24px;
-	margin:40px 0 20px 35px;
+	font-size:28px;
+	margin:20px 0 20px 30px;
 }
 #content h3 {
-	color: #CCCCCC;
-	float: left;
 	font-size: 20px;
-	margin:20px 0 10px 35px;
-	text-decoration: underline;
-	}
+}
 #content h4 {
 	color:#CCCCCC;
 	float:left;
@@ -293,7 +331,7 @@ a:visited {
 	margin-top:5px;
 }
 #content .btn {
-	background:url("images/button.png") 0px 0px no-repeat;
+	background:url("../images/button.png") 0px 0px no-repeat;
 	border:medium none;
 	float:left;
 	height:40px;
@@ -308,7 +346,7 @@ a:visited {
 	
 }
 #content .btn:hover {
-	background:url("images/button.png") -92px 0px no-repeat;
+	background:url("../images/button.png") -92px 0px no-repeat;
 	border:medium none;
 	float:left;
 	height:40px;
@@ -359,8 +397,10 @@ a:visited {
 	text-align:center;
 	width:325px;
 }
+#ft {
+	background: #000 url(../images/footer.jpg) 0px 0px no-repeat;
+}
 #footer {
-	background: #000;
 	height:75px;
 	width:940px;
 }
@@ -383,22 +423,14 @@ a:visited {
 	width: 75px;
 	background: none;
 }
-.footer_nav ul li a {
+#footer a {
 	text-decoration: none;
-	color: #333;
+	color: #666;
+	text-shadow: 0px 1px 1px #000;
 }
-.footer_nav ul li a:hover {
+#footer a:hover {
 	text-decoration: underline;
 	color: #fefefe;
-}
-#footer .old {
-	float: right;
-	color:#303030;
-	margin-right:5px;
-	margin-top:45px;
-}
-#footer .old a {
-	color:#303030;
 }
 .site_tag {
 	float: right;
@@ -406,12 +438,6 @@ a:visited {
 	margin-right:30px;
 	margin-top:35px;
 }
-.site_tag a {
-	color: #333;
-}
-.site_tag a:hover {
-	color: #ccc;
-}
-#clear {
+.clear {
 	clear: both;
 }

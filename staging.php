@@ -16,7 +16,7 @@
       <div class="main_content grid_12 alpha omega">
         <?php require_once("views/sidebar/main_sidebar.php"); ?>
 				<div id="banner">
-					<img src="public/stylesheets/images/real_estate.jpg">
+					<img src="public/images/real_estate.jpg">
 				</div>
 
 				<?php require_once("views/content/staging_content.php"); ?>

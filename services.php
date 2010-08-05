@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <?php require_once("views/head/headmeta.php"); ?>
@@ -13,18 +12,19 @@
 	  </div> <!-- end of hd -->
 	
 	
-      <div class="main_content grid_12 alpha omega">
+      <div id="main_content" class="grid_12 alpha omega">
+        <div id="content_btm"></div>
         <?php require_once("views/sidebar/main_sidebar.php"); ?>
 				<div id="banner">
-					<img src="public/stylesheets/images/idea1_main_banner.jpg">
+					<img src="public/images/idea1_main_banner.jpg">
 				</div>
 
 				<?php require_once("views/content/service_content.php"); ?>
       </div> <!-- end of main_content -->
 
-
     <div id="ft" class="grid_12 alpha omega">
       <?php require_once("views/footer.php"); ?>
+
     </div> <!-- end of ft -->
 
 
@@ -35,5 +35,6 @@
 	
 	 
 	<?php require_once("views/javascripts.php"); ?>
+
 </body>
 </html>
