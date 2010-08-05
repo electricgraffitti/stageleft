@@ -27,6 +27,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="old"><a href="http://www.stageleftredesign.com" target="_blank">.</div>
-		<div class="site_tag"><a href="http://www.cube2media.com">Site by Cube2Media</div>
+		<div class="site_tag">
+		  <a href="http://www.cube2media.com">Site by Cube2Media</a>
+		</div>
 </div><!--end footer-->

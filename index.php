@@ -13,15 +13,15 @@
 	  </div> <!-- end of hd -->
 	
 	
-      <div class="main_content grid_12 alpha omega">
+      <div id="main_content" class="grid_12 alpha omega">
+        <div id="content_btm"></div>
         <?php require_once("views/sidebar/main_sidebar.php"); ?>
 				<div id="banner">
-					<img src="public/stylesheets/images/idea1_main_banner.jpg">
+					<img src="public/images/idea1_main_banner.jpg">
 				</div>
 
 				<?php require_once("views/content/index_content.php"); ?>
       </div> <!-- end of main_content -->
-
 
     <div id="ft" class="grid_12 alpha omega">
       <?php require_once("views/footer.php"); ?>

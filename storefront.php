@@ -12,20 +12,24 @@
       <?php require_once("views/header.php"); ?>
 	  </div> <!-- end of hd -->
 	
-	
+      <!-- Main Content -->
       <div class="main_content grid_12 alpha omega">
+        <!-- Sidebar -->
         <?php require_once("views/sidebar/main_sidebar.php"); ?>
+         
+         <!-- Banner -->
 				<div id="banner">
-					<img src="public/stylesheets/images/store.jpg">
-				</div>
-
+					<img src="public/images/store.jpg">
+				</div><!-- /Banner -->
+				
+        <!-- Content -->
 				<?php require_once("views/content/store_content.php"); ?>
-      </div> <!-- end of main_content -->
+				
+      </div> <!-- /Main Content -->
 
 
     <div id="ft" class="grid_12 alpha omega">
       <?php require_once("views/footer.php"); ?>
-
     </div> <!-- end of ft -->
 
 
