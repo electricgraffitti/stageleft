@@ -13,7 +13,8 @@
 	  </div> <!-- end of hd -->
 	
 	
-      <div class="main_content grid_12 alpha omega">
+      <div id="main_content" class="grid_12 alpha omega">
+        <div id="content_btm"></div>
         <?php require_once("views/sidebar/main_sidebar.php"); ?>
 				<div id="banner">
 					<img src="public/images/idea1_main_banner.jpg">

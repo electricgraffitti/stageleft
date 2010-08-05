@@ -41,6 +41,9 @@ a:visited {
 	outline: none;
 	text-decoration: none;
 }
+.center {
+  text-align: center;
+}
 #hd {
   position: relative;
 	width: 940px;
