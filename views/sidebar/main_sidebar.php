@@ -31,9 +31,9 @@
   	</div> <!-- end of menu -->
   	<div id="logos">
   		<li id="red" class="list_item"><a href="red.php">Red Mountain Realty</a></li>
-  		<li id="reesa" class="list_item"><a href="#">Ressa Pro</a></li>
-  		<li id="iris" class="list_item"><a href="#">ISA</a></li>
-  		<li id="ia" class="list_item"><a href="#">IA</a></li>
+  		<li id="reesa" class="list_item">Reesa Pro</li>
+  		<li id="iris" class="list_item">ISA</li>
+  		<li id="ia" class="list_item">IA</li>
   	</div> <!-- end of logos -->
 	</div>
 </div><!--end sidebar-->

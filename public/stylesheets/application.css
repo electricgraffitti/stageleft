@@ -136,11 +136,13 @@ h2.sidebar_header {
 	display: block;
 	height: 20px;
 	width: 165px;
+	border:1px solid #937D6A;
 }
 #menu ul li a:hover {
 	color: #000;
-	background: #ccc;
+	background: #fff;
 	text-decoration: underline;
+	border:1px solid #000;
 }
 .list_item {
 	position: relative;
@@ -149,13 +151,14 @@ h2.sidebar_header {
 	list-style:none outside none;
 	margin-bottom: 5px;
 	padding-bottom: 5px;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #937D6A;
+	text-indent: -9999em;
 }
 .list_item a {
 	text-indent: -9999em;
 	display: block;
 	width: 150px;
-}
+}	
 #logos {
 	position: relative;
 	width: 255px;
@@ -286,9 +289,17 @@ h2.sidebar_header {
 	font-size: 16px;
 }
 #content input {
-	border:1px solid #000000;
+	border:1px solid #000;
 	float:left;
 	height:25px;
+	margin-left:30px;
+	margin-top:5px;
+	position:relative;
+	text-align:left;
+}
+#content textarea {
+	border:1px solid #000;
+	float:left;
 	margin-left:30px;
 	margin-top:5px;
 	position:relative;
@@ -343,7 +354,7 @@ h2.sidebar_header {
 }
 #content .btn {
 	background:#fff;
-	border:1px solid #937D6A;
+	border:1px solid #000;
 	display:block;
 	float:left;
 	height:30px;
