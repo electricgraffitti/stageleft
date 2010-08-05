@@ -224,11 +224,20 @@ a:visited {
 	width: 500px;
 	margin-left: 60px;
 }
+#contact_heading {
+	width: 558px;
+	height: 90px;
+	position: relative;
+	float: left;
+}
+#contact_heading h2 {
+	width: 558px;
+	height: 30px;
+}
 #content label {
 	color:#CCCCCC;
 	float:left;
 	margin-left:35px;
-	margin-top:20px;
 	position:relative;
 	text-align:left;
 	width:100%;
@@ -242,6 +251,33 @@ a:visited {
 	margin-top:5px;
 	position:relative;
 	text-align:left;
+}
+#content div.form_field {
+	width: 100%;
+	height: 35px;
+	text-align: left;
+	position: relative;
+	float: left;
+}
+#content div.form_field_text {
+	float:left;
+	height:120px;
+	position:relative;
+	text-align:left;
+	width:100%;
+}
+#content div.form_field_button {
+	height:80px;
+	width:100%;
+}
+#content div.error {
+	color:#FF0000;
+	float:left;
+	height:25px;
+	margin-left:32px;
+	margin-top:5px;
+	text-align:left;
+	width:440px;
 }
 #content select {
 	position: relative;
@@ -265,8 +301,11 @@ a:visited {
 	margin-top:25px;
 	position:relative;
 	text-align:left;
-	text-indent:-9999em;
 	width:89px;
+	font-size: 0px;
+	display:block;
+	line-height: 0px;
+	
 }
 #content .btn:hover {
 	background:url("images/button.png") -92px 0px no-repeat;
@@ -277,8 +316,11 @@ a:visited {
 	margin-top:25px;
 	position:relative;
 	text-align:left;
-	text-indent:-9999em;
 	width:89px;
+	font-size: 0px;
+	display:block;
+	line-height: 0px;
+
 }
 #left {
 	position: relative;

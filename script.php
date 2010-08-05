@@ -32,6 +32,20 @@ function FilterCChars($theString) {
  return preg_replace('/[\x00-\x1F]/', '', $theString);
 }
 
+function ProcessPHPFile($PHPFile) {
+ 
+ ob_start();
+ 
+ if (file_exists($PHPFile)) {
+  require $PHPFile;
+ } else {
+  echo "Forms To Go - Error: Unable to load HTML form: $PHPFile";
+  exit;
+ }
+ 
+ return ob_get_clean();
+}
+
 function CheckString($value, $low, $high, $mode, $limitAlpha, $limitNumbers, $limitEmptySpaces, $limitExtraChars, $optional) {
  if ($limitAlpha == kYes) {
   $regExp = 'A-Za-z';
@@ -86,6 +100,61 @@ function CheckEmail($email, $optional) {
 }
 
 
+function CheckValueList_select($values, $valType, $optional) {
+
+ $selCnt = 0;
+
+ $valueList[] = 'Staging';
+ $valueList[] = 'Redesign';
+ $valueList[] = 'Displays';
+ $valueList[] = 'Accessory Rentals';
+ $valueList[] = 'Holiday Decorating';
+ $valueList[] = 'Shopping Assistance';
+
+
+ if (!is_array($values)) {
+  if (strlen($values) > 0) {
+   $values = array($values);
+  } else {
+   $values = array();
+  }
+ }
+
+ foreach ($values as $valuesKey => $valuesVal) {
+  foreach ($valueList as $valueListKey => $valueListVal) {  
+   if ($valueListVal == $valuesVal) {
+    $selCnt++;
+    break;
+   }
+  } 
+  reset($valueList);
+ }
+
+ if ((count($values) == 0) && ($optional === kOptional)) {
+  return true;
+ } elseif (($valType == 1) && ($selCnt > 0)) {
+  return true;
+ } elseif (($valType == 2) && ($selCnt == count($valueList))) {
+  return true;
+ } elseif (($valType == 3) && ($selCnt == 0)) {
+  return true;
+ } else {
+  return false;
+ }
+ 
+}
+
+function CheckTelephone($telephone, $valFormat, $optional) {
+ if ( (strlen($telephone) == 0) && ($optional === kOptional) ) {
+  return true;
+ } elseif ( ereg($valFormat, $telephone) ) {
+  return true;
+ } else {
+  return false;
+ }
+}
+
+
 
 if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
  $clientIP = $_SERVER['HTTP_X_FORWARDED_FOR'];
@@ -106,35 +175,45 @@ $validationFailed = false;
 # Fields Validations
 
 
-if (!CheckString($FTGname, 2, 30, kStringRangeBetween, kYes, kNo, kYes, '', kMandatory)) {
- $FTGErrorMessage['name'] = 'Please Enter a Valid Name';
+if (!CheckString($FTGname, 2, 35, kStringRangeBetween, kYes, kNo, kYes, '', kMandatory)) {
+ $FTGErrorMessage['name'] = 'Enter First & Last Name';
  $validationFailed = true;
 }
 
 if (!CheckEmail($FTGemail_address, kMandatory)) {
- $FTGErrorMessage['email_address'] = 'Please Enter a Valid Email Address';
+ $FTGErrorMessage['email_address'] = 'Enter A Valid Email Address';
  $validationFailed = true;
 }
 
+if (!CheckTelephone($FTGtel, '[0-9]{3}\-[0-9]{3}\-[0-9]{4}', kMandatory)) {
+ $FTGErrorMessage['tel'] = 'Enter A Valid Phone Number';
+ $validationFailed = true;
+}
 
-
-# Include message in error page and dump it to the browser
+# Embed error page and dump it to the browser
 
 if ($validationFailed === true) {
 
- $errorPage = '<html><head><title>Error</title></head><body>Errors found: <!--VALIDATIONERROR--></body></html>';
+ $fileErrorPage = 'contact.php';
+
+ if (file_exists($fileErrorPage) === false) {
+  echo '<html><head><title>Error</title></head><body>The error page: <b>' . $fileErrorPage. '</b> cannot be found on the server.</body></html>';
+  exit;
+ }
+
+ $errorPage = ProcessPHPFile($fileErrorPage);
+
+ $errorList = @implode("<br />\n", $FTGErrorMessage);
+ $errorPage = str_replace('<!--VALIDATIONERROR-->', $errorList, $errorPage);
 
  $errorPage = str_replace('<!--FIELDVALUE:name-->', $FTGname, $errorPage);
  $errorPage = str_replace('<!--FIELDVALUE:email_address-->', $FTGemail_address, $errorPage);
  $errorPage = str_replace('<!--FIELDVALUE:tel-->', $FTGtel, $errorPage);
- $errorPage = str_replace('<!--FIELDVALUE:select-->', $FTGselect, $errorPage);
  $errorPage = str_replace('<!--FIELDVALUE:comments-->', $FTGcomments, $errorPage);
  $errorPage = str_replace('<!--ERRORMSG:name-->', $FTGErrorMessage['name'], $errorPage);
  $errorPage = str_replace('<!--ERRORMSG:email_address-->', $FTGErrorMessage['email_address'], $errorPage);
+ $errorPage = str_replace('<!--ERRORMSG:tel-->', $FTGErrorMessage['tel'], $errorPage);
 
-
- $errorList = @implode("<br />\n", $FTGErrorMessage);
- $errorPage = str_replace('<!--VALIDATIONERROR-->', $errorList, $errorPage);
 
  echo $errorPage;
 
@@ -144,17 +223,18 @@ if ( $validationFailed === false ) {
 
  # Email to Form Owner
   
- $emailSubject = FilterCChars("Contact Form");
+ $emailSubject = FilterCChars("Contact Inquiry");
   
- $emailBody = "name : $FTGname\n"
-  . "email_address : $FTGemail_address\n"
-  . "tel : $FTGtel\n"
-  . "select : $FTGselect\n"
-  . "comments : $FTGcomments\n"
+ $emailBody = "Name : $FTGname\n"
+  . "Email_address : $FTGemail_address\n"
+  . "Tel : $FTGtel\n"
+  . "Inquiry : $FTGselect\n"
+  . "Comments : $FTGcomments\n"
+  . "\n"
   . "";
-  $emailTo = 'Larry <larry@cube2media.com>';
+  $emailTo = 'Larry Jo <larry@cube2media.com>';
    
-  $emailFrom = FilterCChars("$FTGemail_address");
+  $emailFrom = FilterCChars("larry@cube2media.com");
    
   $emailHeader = "From: $emailFrom\n"
    . "MIME-Version: 1.0\n"
