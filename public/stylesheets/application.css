@@ -250,9 +250,8 @@ h2.sidebar_header {
 	padding:8px 8px 15px 8px;
 	text-align:justify;
 	width:580px;
-}
-#content p .italic {
 	font-style: italic;
+	border:1px solid #937D6A;
 }
 #content p a {
 	display:block;
