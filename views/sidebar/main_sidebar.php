@@ -21,6 +21,9 @@
   			<li>
   				<a href="contact.php">Contact Us</a>
   			</li>
+				<li>
+					<a href="testimonials.php">Testimonials</a>
+				</li>
   			<li>
   				<a href="storefront.php">Our Storefront</a>
   			</li>

@@ -20,6 +20,9 @@
 					<a href="contact.php">Contact</a>
 				</li>
 				<li>
+					<a href="testimonials.php">Testimonials</a>
+				</li>
+				<li>
 					<a href="storefront.php">Store</a>
 				</li>
 				<li>

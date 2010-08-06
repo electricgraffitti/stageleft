@@ -117,6 +117,7 @@ h2.sidebar_header {
 #menu	{
 	height:270px;
 	width:255px;
+	margin-bottom:50px;
 }
 #menu ul {
 	height:300px;
@@ -233,18 +234,37 @@ h2.sidebar_header {
 #content p {
 	color:#CCCCCC;
 	float:left;
-	padding:0 30px;
+	padding:0px 30px;
 	text-align:justify;
 	width:610px;
 	margin-bottom: 10px;
 	font-size: 16px;
 }
+#content p.testimonial {
+	-moz-box-shadow:0 1px 2px #000000;
+	color:#CCCCCC;
+	float:left;
+	font-size:16px;
+	margin-bottom:10px;
+	margin-left:33px;
+	padding:8px 8px 15px 8px;
+	text-align:justify;
+	width:580px;
+}
 #content p .italic {
 	font-style: italic;
 }
 #content p a {
-	display: block;
-	width:40px;
+	display:block;
+	font-size:15px;
+	margin-top:8px;
+	text-decoration:underline;
+}
+#content p a:hover {
+	display:block;
+	font-size:15px;
+	text-decoration:underline;
+	color: #ccc;
 }
 #content ul {
 	position: relative;
@@ -430,7 +450,7 @@ h2.sidebar_header {
 .footer_nav ul {
 	position: relative;
 	float: left;
-	width: 600px;
+	width: 680px;
 	height: 20px;
 }
 .footer_nav ul li {
