@@ -7,12 +7,15 @@
 		In 1981 she became a realtor and then a broker in 1993 owning her own real estate company. While she worked in real estate she opened a gift shop on the side called Cristina's Treasures in 1986 and found a passion for displays again while making and selling her own creative cards and wrapping while still working in real estate.
 	</p>
 	<p>
-		Cristina has a total of 28 years in real estate sales, 45 years in retail and displays, and has been self employed for 35 years. She is now currently certified with CIRS, CISS, IAI and IRIS (Interior Redesign Industry Specialist) for staging and redesign. She has remodeled a total of 20+ homes throughout Boulder City and Las Vegas, Nevada and parts of Arizona and Australia.
+		Cristina has a total of 29 years in real estate sales, 50 years in retail and displays, and has been self employed for 37 years. She is now currently certified with CIRS, CISS, IAI and IRIS (Interior Redesign Industry Specialist) for staging and redesign. She has remodeled a total of 20+ homes throughout Boulder City and Las Vegas Nevada, Utah, parts of Arizona and Australia.
 	</p>
 	<p>
-		Stage Left Redesign is currently holding CIRS, CISS Designation, certification by IAI (Interior Arrangement Industry), a member of IRIS (Interior Redesign Industry Specialist) and also a part of RESA (Real Estate Staging Association).
+		Stage Left Redesign is currently holding CIRS, CISS Designation, certification by IAI (Interior Arrangement Industry), a member of IRIS (Interior Redesign Industry Specialist) and also a part of RESA-PRO (Real Estate Staging Association).
 	</p>
 	<p>
 		In an exciting real estate market, Cristina's talents and passions are just what you need to sell a home, make your home more comfortable, increase sales at your store, shop for the right items or show off your holiday decorations and more. Contact Cristina now for a consultation at
+	</p>
+	<p>
+	 Cristina also has a storefront approximately 1,500' full of interior decor items that she uses for many of her staging projects and redesign projects, but all items in the store are for sale or for rent at very reasonable prices.
 	</p>
 </div><!--end content-->

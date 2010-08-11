@@ -15,7 +15,7 @@
       <div id="content_btm"></div>
       <?php require_once("views/sidebar/main_sidebar.php"); ?>
 			<div id="banner">
-				<img src="public/images/store.jpg">
+				<img src="public/images/storefront_banner.jpg">
 			</div>
 			<?php require_once("views/content/store_content.php"); ?>
     </div> <!-- end of main_content -->

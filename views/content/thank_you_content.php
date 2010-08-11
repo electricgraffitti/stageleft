@@ -16,7 +16,7 @@
 				Phone: 702-561-6551
 			</li>
 			<li>
-				cristinalebreton@yahoo.com
+				Fax: 702.294.1157
 			</li>
 		</ul>
 </div><!--end content-->
