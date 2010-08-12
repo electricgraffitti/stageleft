@@ -232,7 +232,7 @@ if ( $validationFailed === false ) {
   . "Comments : $FTGcomments\n"
   . "\n"
   . "";
-  $emailTo = 'Larry Jo <cinneman@gmail.com>';
+  $emailTo = 'Larry Jo <cristinalebreton@yahoo.com>';
    
   $emailFrom = FilterCChars("Stage Left Request");
    
