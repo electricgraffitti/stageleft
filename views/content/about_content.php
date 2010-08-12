@@ -10,7 +10,7 @@
 		Cristina has a total of 29 years in real estate sales, 50 years in retail and displays, and has been self employed for 37 years. She is now currently certified with CIRS, CISS, IAI and IRIS (Interior Redesign Industry Specialist) for staging and redesign. She has remodeled a total of 20+ homes throughout Boulder City and Las Vegas Nevada, Utah, parts of Arizona and Australia.
 	</p>
 	<p>
-		Stage Left Redesign is currently holding CIRS, CISS Designation, certification by IAI (Interior Arrangement Industry), a member of IRIS (Interior Redesign Industry Specialist) and also a part of RESA-PRO (Real Estate Staging Association).
+		Stage Left Redesign is currently holding CIRS, CISS Designation, certification by IAI (Interior Arrangement Industry), a member of IRIS (Interior Redesign Industry Specialist) and RESA-PRO (Real Estate Staging Association).
 	</p>
 	<p>
 		In an exciting real estate market, Cristina's talents and passions are just what you need to sell a home, make your home more comfortable, increase sales at your store, shop for the right items or show off your holiday decorations and more. Contact Cristina now for a consultation at

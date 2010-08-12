@@ -33,6 +33,7 @@
   		</ul>
   	</div> <!-- end of menu -->
   	<div id="logos">
+			<li id="cs" class="list_item"><a href="storefront.php">Cristinas Treasures</a></li>
   		<li id="red" class="list_item"><a href="red.php">Red Mountain Realty</a></li>
   		<li id="reesa" class="list_item">Reesa Pro</li>
   		<li id="iris" class="list_item">ISA</li>

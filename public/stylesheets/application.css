@@ -44,6 +44,9 @@ a:visited {
 .center {
   text-align: center;
 }
+.italic {
+	font-style: italic;
+}
 #hd {
   position: relative;
 	width: 940px;
@@ -164,6 +167,13 @@ h2.sidebar_header {
 	position: relative;
 	width: 255px;
 	height: 350px;
+}
+#cs {
+	background:url("../images/cs_logo.png") no-repeat scroll 0 0 transparent;
+	height: 38px;
+}
+#cs a {
+	height: 38px;
 }
 #red {
 	background:url("../images/redmntn.png") no-repeat scroll 0 0 transparent;

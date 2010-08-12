@@ -1,7 +1,7 @@
 <div id="content"> 
 	<h2>Cristina's Treasures dba Stage Left Redesign</h2>
 	<p>
-		We have lots of items and furniture for staging and redesign projects.  All items in the store are for rent or also for sale!  Consultation fees up $100.00 are credited back to any staging or redesign project.  Our price lists for store items are available on request. Contact me for store hours or to setup an appointment to view store items for your project.
+		We have lots of items and furniture for staging and redesign projects.  All items in the store are for rent or also for sale!  Consultation fees are credited back to any staging or redesign project if we do the work.  Our price lists for lease items and fees are available on request. Contact me for store hours or to setup an appointment to view store items for your project.
 	</p>
 	<h4>Contact Cristina To Schedule an Appointment Today!</h4>
 		<ul>
