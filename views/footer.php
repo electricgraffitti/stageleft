@@ -8,7 +8,7 @@
 					<a href="about.php">About</a>
 				</li>
 				<li>
-					<a hrerf="services.php">Services</a>
+					<a href="services.php">Services</a>
 				</li>
 				<li>
 					<a href="staging.php">Staging</a>

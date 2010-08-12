@@ -232,9 +232,9 @@ if ( $validationFailed === false ) {
   . "Comments : $FTGcomments\n"
   . "\n"
   . "";
-  $emailTo = 'Larry Jo <larry@cube2media.com>';
+  $emailTo = 'Larry Jo <cinneman@gmail.com>';
    
-  $emailFrom = FilterCChars("larry@cube2media.com");
+  $emailFrom = FilterCChars("Stage Left Request");
    
   $emailHeader = "From: $emailFrom\n"
    . "MIME-Version: 1.0\n"
